@@ -1,0 +1,23 @@
+{
+    "name": "probablyrational/wasabi-storage",
+    "description": "A wasabi storage driver for Laravel",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^5.9@dev",
+        "illuminate/filesystem": "^5.9@dev",
+        "league/flysystem-cached-adapter": "dev-master",
+        "php": "^7.2",
+        "league/flysystem-aws-s3-v3": "^1.0@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2@dev"
+    },
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Zachary Claret-Scott",
+            "email": "zachary.claretscott@probablyrational.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
