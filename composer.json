@@ -19,5 +19,17 @@
             "email": "zachary.claretscott@probablyrational.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ProbablyRational\\Wasabi-Storage\\WasabiServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ProbablyRational\\Wasabi-Storage\\": "src/"
+        }
+    }
 }
