@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace ProbablyRational\Wasabi;
 
 use Storage;
 use Aws\S3\S3Client;
@@ -29,7 +29,7 @@ class WasabiServiceProvider extends ServiceProvider
 	{
 		Storage::extend('wasabi', function ($app, $config) {
 			$conf = [
-				'endpoint' => "https://" . $config['bucket'] . ".s3." . $config['region'] . "wasabisys.com/",
+				'endpoint' => "https://" . $config['bucket'] . ".s3." . $config['region'] . ".wasabisys.com/",
 				'bucket_endpoint' => true,
 				'credentials' => [
 					'key' => $config['key'],
