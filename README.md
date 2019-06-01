@@ -36,7 +36,7 @@ Add a new disk to your `filesystems.php` config
 ## Usage
 
 ```php
-$disk = Storage::disk('gcs');
+$disk = Storage::disk('wasabi');
 
 // create a file
 $disk->put('avatars/1', $fileContents);
