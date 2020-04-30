@@ -38,6 +38,9 @@ Add a new disk to your `filesystems.php` config
 ```php
 $disk = Storage::disk('wasabi');
 
+// list all files
+$files = $disk->files('/');
+
 // create a file
 $disk->put('avatars/1', $fileContents);
 
