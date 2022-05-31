@@ -1,3 +1,20 @@
+# THIS PLUGIN IS DEPRECIATED
+
+> As of Laravel 8, laravel not supports [s3 compatible backends](https://laravel.com/docs/8.x/filesystem#amazon-s3-compatible-filesystems) natively so there is no need to use this package. All you need to do is update your `filesystems.php` config file to include a endpoint on a s3 driver.
+
+```php
+        'wasabi' => [
+            'driver' => 's3',
+            'key' => env('WASABI_ACCESS_KEY_ID'),
+            'secret' => env('WASABI_SECRET_ACCESS_KEY'),
+            'region' => env('WASABI_DEFAULT_REGION', 'eu-central-1'),
+            'bucket' => env('WASABI_BUCKET'),
+            'endpoint' => env('WASABI_ENDPOINT', 'https://s3.eu-central-1.wasabisys.com/'),
+        ],
+```
+
+This package will remain on github and packagist for use with older laravel versions.
+
 # wasabi-storage
 
 A [Wasabi](https://wasabi.com/) storage driver for Laravel.
